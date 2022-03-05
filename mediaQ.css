@@ -1,0 +1,59 @@
+@media screen and (min-width: 770px) {
+    .apartment-info .mobile {
+        display: none;
+    }
+
+    .apartment-info .web {
+        display: block;
+    }
+
+    .apartment-info .web .apartment-info-menu {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        letter-spacing: 0.03rem;
+        color: #696969;
+    }
+
+    .web .menu-option {
+        position: relative;
+        padding-right: 1rem;
+        margin-right: 1rem;
+    }
+
+    .web .menu-option p{
+        border-bottom: 1px solid while;
+        padding-bottom: 0.4rem;
+    }
+
+    .web .break-line::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 0;
+        bottom: 0;
+        height: 15px;
+        width: 2px;
+        background: #9a9a9a;
+        display: block;
+        transition: .3s ease;
+    }
+
+    .apartment-info {
+        max-width: none;
+        margin: 2rem 2rem;
+        border-width: 2px;
+        padding: 1rem;
+    }
+
+    .active {
+        color: black;
+        border-bottom: 2px solid black;
+    }
+
+    .amenities-options-container{
+        grid-template-columns: auto auto auto;
+    }
+}
