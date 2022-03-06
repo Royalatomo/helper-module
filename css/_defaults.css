@@ -5,3 +5,7 @@
     /* Disable text selaction */
     user-select: none
 }
+
+:root{
+    --grayColor: #929292;
+}
