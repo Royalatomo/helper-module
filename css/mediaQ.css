@@ -1,0 +1,82 @@
+@media screen and (min-width: 650px) {
+    .rera-number{
+        margin-top: 0;
+    }
+
+    .apartment-info .mobile {
+        display: none;
+    }
+
+    .apartment-info .web {
+        display: block;
+    }
+
+    .active {
+        color: black;
+        border-bottom: 2px solid black;
+    }
+
+    .amenities-options-container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .apartment-info .web .apartment-info-menu {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        letter-spacing: 0.03rem;
+        color: #696969;
+    }
+
+    .apartment-info {
+        max-width: none;
+        border-width: 2px;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .apartment-info {
+        grid-area: info;
+    }
+
+    .apartment-main-div {
+        display: grid;
+        gap: 2rem;
+        width: 100vw;
+        padding: 2rem 4rem;
+        grid-template-areas:
+            'info resources'
+            'map map';
+    }
+
+    .web .break-line::after{
+        height: 40px;
+    }
+    .apartment-info{
+        margin: 0;
+        height: 220px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 1162px) {
+    .web .break-line::after{
+        height: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .apartment-main-div {
+        grid-template-areas:
+            'map info'
+            'map resources';
+    }
+    .apartment-info {
+        width: 570px;
+    }
+}
+/*  */

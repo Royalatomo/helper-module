@@ -98,7 +98,8 @@ window.onload = () => {
         })
     }
 
-
+    document.querySelectorAll('.info-title')[0].click();
+    document.querySelectorAll('.menu-option')[0].click()
 }
 
 
